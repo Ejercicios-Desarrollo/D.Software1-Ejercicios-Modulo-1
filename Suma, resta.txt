@@ -1,0 +1,90 @@
+; Simple example
+; Writes Hello World to the output
+
+	JMP start
+hello: DB "0123456789" ; Variable
+       DB 0	; String terminator
+
+start:
+	
+	MOV B, 5
+	MOV C, 3; Point to var 
+	SUB B,2
+	SUB C,2
+	SUB B, C
+	ADD B,2
+
+	MOV D, 232	; Point to output
+
+	
+	;SUB 
+
+	MOV A, [B]	; Get char from var
+	MOV [D], A	; Write to output
+
+        HLT             ; Stop execution
+
+
+Multiplicacion:
+; Simple example
+; Writes Hello World to the output
+
+	JMP start
+hello: DB "0123456789" ; Variable
+       DB 0	; String terminator
+
+start:
+	
+
+
+
+	MOV A,4
+	MOV C,2
+	MUL C
+	ADD A,2
+
+	MOV D, 232	; Point to output
+
+	
+	;SUB 
+
+	MOV C, [A]	; Get char from var
+	MOV [D], C	; Write to output
+
+        HLT             ; Stop execution
+
+Mult:
+; Simple example
+; Writes Hello World to the output
+
+	JMP start
+hello: DB "0123456789" ; Variable
+       DB 0	; String terminator
+
+start:
+
+	MOV B,1
+	MOV C,1
+	CMP B, [C]	; Check if end
+	JZ multiplicacion; jump if 
+
+
+
+
+
+multiplicacion:
+	MOV B,4
+	MOV A,4
+	MOV C,2
+
+	MUL C
+	ADD A,2
+
+	MOV D, 232	; Point to output
+
+	MOV C, [A]	; Get char from var
+	MOV [D], C	; Write to output
+
+        HLT             ; Stop execution
+
+

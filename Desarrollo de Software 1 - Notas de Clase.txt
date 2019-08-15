@@ -1,0 +1,13 @@
+Notas:
+Clase 2:
+-Archivos.h: "(.header) definiciones de varibales, funciones 
+(tienen vinculado otro archivo *.c) y nada más."
+-char string[n]	-String, cadena de caracteres.
+Clase 3:
+-bool mayorDeEdad = true;
+-bool bienAlimentado = false;
+-bool esSaludable = (mayorDeEdad && bienAlimentado);
+-usar expresividad
+-bienAlimentado = (alimentado == "si");
+
+
